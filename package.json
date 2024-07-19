@@ -6,10 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:dev": "npm ci && npm run diagnose && NODE_ENV=development npx vite build",
+    "build:dev": "npm ci && NODE_ENV=development ./node_modules/.bin/vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "diagnose": "npm list vite && which vite && echo $PATH"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.6.0",
